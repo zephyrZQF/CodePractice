@@ -12,6 +12,7 @@ public class PAT1002 {
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         String s = in.nextLine();
+
         int n = 0;
         for(int i = 0; i < s.length() ; i++){
             int tmp = Integer.parseInt(String.valueOf(s.charAt(i)));
@@ -42,6 +43,8 @@ public class PAT1002 {
         sb.append(map.get(s2.charAt(s2.length() - 1)));
 
         System.out.println(sb.toString());
+
+        in.close();
     }
 
 }

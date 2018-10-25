@@ -25,5 +25,6 @@ public class PAT1004 {
         System.out.println(maxName + " " + max);
         System.out.println(minName + " " + min);
 
+        in.close();
     }
 }
