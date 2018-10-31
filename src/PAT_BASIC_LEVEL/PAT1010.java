@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/*
+设计函数求一元多项式的导数。（注：x^n  n为整数）的一阶导数为nx^(n−1)。
+ */
+
 public class PAT1010 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in );
