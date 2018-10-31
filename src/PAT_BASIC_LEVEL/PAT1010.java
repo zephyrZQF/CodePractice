@@ -26,6 +26,5 @@ public class PAT1010 {
         }else {
             System.out.println( list.toString().replaceAll("\\[|]|,",""));
         }
-
     }
 }
