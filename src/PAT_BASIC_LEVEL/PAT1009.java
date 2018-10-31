@@ -2,6 +2,10 @@ package PAT_BASIC_LEVEL;
 
 import java.util.Scanner;
 
+/**
+  * 1009	Ëµ·´»°
+ */
+
 public class PAT1009 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

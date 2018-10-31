@@ -3,6 +3,10 @@ package PAT_BASIC_LEVEL;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+
+/**
+ *  * 1007	ËØÊı¶Ô²ÂÏë
+ */
 public class PAT1007 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

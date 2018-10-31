@@ -2,6 +2,10 @@ package PAT_BASIC_LEVEL;
 
 import java.util.Scanner;
 
+/**
+
+ * 1006	换个格式输出整数
+ */
 public class PAT1006 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

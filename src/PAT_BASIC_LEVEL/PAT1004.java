@@ -2,6 +2,10 @@ package PAT_BASIC_LEVEL;
 
 import java.util.Scanner;
 
+/**
+ * 1004	成绩排名	20	5823	19297	0.30
+
+ */
 public class PAT1004 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

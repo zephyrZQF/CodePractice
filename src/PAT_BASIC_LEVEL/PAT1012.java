@@ -20,6 +20,7 @@ public class PAT1012 {
         int sign = 1;
         int count = 0;
         int count1 = 0;
+//        一直有个case通不过，后来发现交错相加可能等于0，而我一直用是否等于0判断
 
         int n = in.nextInt();
         for(int i = 0; i < n ; i++){

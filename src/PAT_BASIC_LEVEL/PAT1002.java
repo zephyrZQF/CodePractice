@@ -5,7 +5,8 @@ import java.util.Map;
 import java.util.Scanner;
 
 /*
-PAT  1002
+PAT  1002    写出这个数
+
  */
 public class PAT1002 {
 
