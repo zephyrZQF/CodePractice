@@ -1,5 +1,7 @@
 package dajiao.session2;
 
+import java.util.EmptyStackException;
+
 public class StackIml implements Stack {
     private int[] stackElem;
     private int top;
@@ -10,28 +12,31 @@ public class StackIml implements Stack {
     }
 
     public StackIml(int size){
+        if(size < 0)
+            throw new IllegalArgumentException("capacity must greater than 0");
         stackElem = new int[size];
         top = 0;
     }
 
     @Override
     public boolean push(int value) {
-        if(stackElem.length == top){
+        ensureCapacity();
+        stackElem[top++] = value;
+        return true;
+    }
+
+    private void ensureCapacity(){
+        if(top == stackElem.length){
             int[] newArray = new int[stackElem.length*2];
             System.arraycopy(stackElem,0,newArray,0,stackElem.length);
             stackElem = newArray;
-            push(value);
-            return true;
-        }else {
-            stackElem[top++] = value;
-            return true;
         }
     }
 
     @Override
     public int pop() {
         if(isEmpty()){
-            throw new RuntimeException("Stack is empty when pop");
+            throw new EmptyStackException();
         }
         return stackElem[--top];
     }
@@ -39,7 +44,7 @@ public class StackIml implements Stack {
     @Override
     public int peak() {
         if(isEmpty()){
-            throw new RuntimeException("Stack is empty when peak!");
+            throw new EmptyStackException();
         }
         return stackElem[top - 1];
     }
