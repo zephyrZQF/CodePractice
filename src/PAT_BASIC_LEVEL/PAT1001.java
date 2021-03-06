@@ -14,8 +14,8 @@ public class PAT1001 {
         int count = 0;
 
         while (num != 1) {
-            num = num % 2 == 0 ? num / 2 : (num*3 + 1)/2;
-            count ++;
+            num = num % 2 == 0 ? num / 2 : (num * 3 + 1) / 2;
+            count++;
         }
 
         System.out.print(count);

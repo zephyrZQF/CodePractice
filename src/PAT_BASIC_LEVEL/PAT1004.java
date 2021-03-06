@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 /**
  * 1004	成绩排名	20	5823	19297	0.30
-
  */
 public class PAT1004 {
     public static void main(String[] args) {
@@ -14,14 +13,14 @@ public class PAT1004 {
         int min = 101;
         String minName = "";
         String maxName = "";
-        for(int i = 0; i < count ; i ++){
+        for (int i = 0; i < count; i++) {
             String s = in.nextLine();
             String[] students = s.split(" ");
-            if(Integer.parseInt(students[2]) > max){
+            if (Integer.parseInt(students[2]) > max) {
                 max = Integer.parseInt(students[2]);
                 maxName = students[0] + " " + students[1];
             }
-            if(Integer.parseInt(students[2]) < min){
+            if (Integer.parseInt(students[2]) < min) {
                 min = Integer.parseInt(students[2]);
                 minName = students[0] + " " + students[1];
             }

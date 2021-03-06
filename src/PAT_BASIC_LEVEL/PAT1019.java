@@ -5,20 +5,20 @@ import java.util.Collections;
 import java.util.Scanner;
 
 /**
- * Êý×ÖºÚ¶´
- * ¸ø¶¨ÈÎÒ»¸ö¸÷Î»Êý×Ö²»ÍêÈ«ÏàÍ¬µÄ4Î»ÕýÕûÊý£¬Èç¹ûÎÒÃÇÏÈ°Ñ4¸öÊý×Ö°´·ÇµÝÔöÅÅÐò£¬ÔÙ°´·ÇµÝ¼õÅÅÐò£¬È»ºóÓÃµÚ1¸öÊý×Ö¼õµÚ2¸öÊý×Ö£¬½«µÃµ½
- *  Ò»¸öÐÂµÄÊý×Ö¡£Ò»Ö±ÖØ¸´ÕâÑù×ö£¬ÎÒÃÇºÜ¿ì»áÍ£ÔÚÓÐ¡°Êý×ÖºÚ¶´¡±Ö®³ÆµÄ6174£¬Õâ¸öÉñÆæµÄÊý×ÖÒ²½ÐKaprekar³£Êý¡£
- *
- *  ÀýÈç£¬ÎÒÃÇ´Ó6767¿ªÊ¼£¬½«µÃµ½
- *
- *  7766 - 6677 = 1089
- *  9810 - 0189 = 9621
- *  9621 - 1269 = 8352
- *  8532 - 2358 = 6174
- *  7641 - 1467 = 6174
- *  ... ...
- *
- *  ÏÖ¸ø¶¨ÈÎÒâ4Î»ÕýÕûÊý£¬Çë±àÐ´³ÌÐòÑÝÊ¾µ½´ïºÚ¶´µÄ¹ý³Ì¡£
+ * ï¿½ï¿½ï¿½ÖºÚ¶ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½È«ï¿½ï¿½Í¬ï¿½ï¿½4Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È°ï¿½4ï¿½ï¿½ï¿½ï¿½ï¿½Ö°ï¿½ï¿½Çµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù°ï¿½ï¿½ÇµÝ¼ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½Ãµï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½Ãµï¿½
+ * Ò»ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½Ö¡ï¿½Ò»Ö±ï¿½Ø¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÇºÜ¿ï¿½ï¿½Í£ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ÖºÚ¶ï¿½ï¿½ï¿½Ö®ï¿½Æµï¿½6174ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½Kaprekarï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * <p>
+ * ï¿½ï¿½ï¿½ç£¬ï¿½ï¿½ï¿½Ç´ï¿½6767ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½
+ * <p>
+ * 7766 - 6677 = 1089
+ * 9810 - 0189 = 9621
+ * 9621 - 1269 = 8352
+ * 8532 - 2358 = 6174
+ * 7641 - 1467 = 6174
+ * ... ...
+ * <p>
+ * ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½4Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½Ä¹ï¿½ï¿½Ì¡ï¿½
  */
 
 public class PAT1019 {
@@ -28,35 +28,35 @@ public class PAT1019 {
         in.close();
         int[] arrs = Arrs(num);
 
-        while(true){
+        while (true) {
             Arrays.sort(arrs);
             int first = 0;
-            for(int i = 3; i >= 0; i--){
-                first = first*10 + arrs[i];
+            for (int i = 3; i >= 0; i--) {
+                first = first * 10 + arrs[i];
             }
 
             int second = 0;
-            for(int i = 0; i < 4; i++){
-                second = second*10 +arrs[i];
+            for (int i = 0; i < 4; i++) {
+                second = second * 10 + arrs[i];
             }
 
             int ans = first - second;
-            if(ans == 6174){
-                System.out.printf("%04d - %04d = %04d\n",first,second,ans);
+            if (ans == 6174) {
+                System.out.printf("%04d - %04d = %04d\n", first, second, ans);
                 break;
-            }else if(ans == 0){
-                System.out.printf("%04d - %04d = %04d\n",first,second,ans);
+            } else if (ans == 0) {
+                System.out.printf("%04d - %04d = %04d\n", first, second, ans);
                 break;
             }
-            System.out.printf("%04d - %04d = %04d\n",first,second,ans);
+            System.out.printf("%04d - %04d = %04d\n", first, second, ans);
             arrs = Arrs(ans);
         }
     }
 
-    public static int[] Arrs(int num){
+    public static int[] Arrs(int num) {
         int[] arrs = new int[4];
-        for(int i = 0;i < 4; i++){
-            int tmp =  num % 10;
+        for (int i = 0; i < 4; i++) {
+            int tmp = num % 10;
             num = num / 10;
             arrs[i] = tmp;
         }

@@ -3,29 +3,28 @@ package PAT_BASIC_LEVEL;
 import java.util.Scanner;
 
 /**
-
- * 1006	»»¸ö¸ñÊ½Êä³öÕûÊý
+ * 1006	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class PAT1006 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int num  = in.nextInt();
+        int num = in.nextInt();
         in.close();
         StringBuilder sb = new StringBuilder();
-        int n = num/100;
-        num = num%100;
-        for(int i = 0; i < n; i++){
+        int n = num / 100;
+        num = num % 100;
+        for (int i = 0; i < n; i++) {
             sb.append("B");
         }
 
-        n = num/10;
-        num=num%10;
-        for(int i = 0; i < n; i++){
+        n = num / 10;
+        num = num % 10;
+        for (int i = 0; i < n; i++) {
             sb.append("S");
         }
 
-        for(int i = 0; i < num; i++){
-            sb.append(i+1);
+        for (int i = 0; i < num; i++) {
+            sb.append(i + 1);
         }
         System.out.println(sb.toString());
     }

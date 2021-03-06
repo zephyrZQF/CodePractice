@@ -5,13 +5,13 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
- * ¸ø¶¨Ò»ÏµÁÐÕýÕûÊý£¬Çë°´ÒªÇó¶ÔÊý×Ö½øÐÐ·ÖÀà£¬²¢Êä³öÒÔÏÂ 5 ¸öÊý×Ö£º
- *
- * A1 = ÄÜ±» 5 Õû³ýµÄÊý×ÖÖÐËùÓÐÅ¼ÊýµÄºÍ£»
- * A2 = ½«±» 5 ³ýºóÓà 1 µÄÊý×Ö°´¸ø³öË³Ðò½øÐÐ½»´íÇóºÍ£¬¼´¼ÆËã n16Ó1n2+n36Ó1n46å8£»
- * A3 = ±» 5 ³ýºóÓà 2 µÄÊý×ÖµÄ¸öÊý£»
- * A4 = ±» 5 ³ýºóÓà 3 µÄÊý×ÖµÄÆ½¾ùÊý£¬¾«È·µ½Ð¡Êýµãºó 1 Î»£»
- * A5 = ±» 5 ³ýºóÓà 4 µÄÊý×ÖÖÐ×î´óÊý×Ö¡£
+ * ï¿½ï¿½ï¿½ï¿½Ò»Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë°´Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½Ð·ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 5 ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½
+ * <p>
+ * A1 = ï¿½Ü±ï¿½ 5 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¼ï¿½ï¿½ï¿½ÄºÍ£ï¿½
+ * A2 = ï¿½ï¿½ï¿½ï¿½ 5 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 1 ï¿½ï¿½ï¿½ï¿½ï¿½Ö°ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½Ð½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ n1ï¿½6ï¿½1n2+n3ï¿½6ï¿½1n4ï¿½6ï¿½8ï¿½ï¿½
+ * A3 = ï¿½ï¿½ 5 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 2 ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÄ¸ï¿½ï¿½ï¿½ï¿½ï¿½
+ * A4 = ï¿½ï¿½ 5 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 3 ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ 1 Î»ï¿½ï¿½
+ * A5 = ï¿½ï¿½ 5 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 4 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½
  */
 public class PAT1012 {
     public static void main(String[] args) {
@@ -20,21 +20,21 @@ public class PAT1012 {
         int sign = 1;
         int count = 0;
         int count1 = 0;
-//        Ò»Ö±ÓÐ¸öcaseÍ¨²»¹ý£¬ºóÀ´·¢ÏÖ½»´íÏà¼Ó¿ÉÄÜµÈÓÚ0£¬¶øÎÒÒ»Ö±ÓÃÊÇ·ñµÈÓÚ0ÅÐ¶Ï
+//        Ò»Ö±ï¿½Ð¸ï¿½caseÍ¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¿ï¿½ï¿½Üµï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ö±ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½0ï¿½Ð¶ï¿½
 
         int n = in.nextInt();
-        for(int i = 0; i < n ; i++){
+        for (int i = 0; i < n; i++) {
             int num = in.nextInt();
-            switch (num % 5){
+            switch (num % 5) {
                 case 0:
-                    if(num % 2 == 0){
+                    if (num % 2 == 0) {
                         A[0] += num;
                     }
 
                     break;
                 case 1:
-                    count1 ++;
-                    A[1] += sign*num;
+                    count1++;
+                    A[1] += sign * num;
                     sign *= -1;
                     break;
                 case 2:
@@ -42,7 +42,7 @@ public class PAT1012 {
                     break;
                 case 3:
                     A[3] += num;
-                    count ++;
+                    count++;
                     break;
                 case 4:
                     A[4] = A[4] > num ? A[4] : num;
@@ -50,30 +50,30 @@ public class PAT1012 {
             }
         }
 
-        if(A[0] == 0){
+        if (A[0] == 0) {
             System.out.print("N ");
-        }else {
+        } else {
             System.out.print(A[0] + " ");
         }
-        if(count1 == 0){
+        if (count1 == 0) {
             System.out.print("N ");
-        }else {
+        } else {
             System.out.print(A[1] + " ");
         }
-        if(A[2] == 0){
+        if (A[2] == 0) {
             System.out.print("N ");
-        }else {
+        } else {
             System.out.print(A[2] + " ");
         }
-        if(A[3] == 0){
+        if (A[3] == 0) {
             System.out.print("N ");
-        }else {
-            DecimalFormat df = new DecimalFormat("0.0");//¸ñÊ½»¯Ð¡Êý
-            System.out.print(df.format((float)A[3]/count) + " ");
+        } else {
+            DecimalFormat df = new DecimalFormat("0.0");//ï¿½ï¿½Ê½ï¿½ï¿½Ð¡ï¿½ï¿½
+            System.out.print(df.format((float) A[3] / count) + " ");
         }
-        if(A[4] == 0){
+        if (A[4] == 0) {
             System.out.print("N");
-        }else {
+        } else {
             System.out.print(A[4]);
         }
 

@@ -5,30 +5,30 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
-设计函数求一元多项式的导数。（注：x^n  n为整数）的一阶导数为nx^(n−1)。
+锟斤拷坪锟斤拷锟斤拷锟揭辉拷锟斤拷锟绞斤拷牡锟斤拷锟斤拷锟斤拷锟阶拷锟絰^n  n为锟斤拷锟斤拷锟斤拷锟斤拷一锟阶碉拷锟斤拷为nx^(n锟�6锟�11)锟斤拷
  */
 
 public class PAT1010 {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in );
-        String[] arr = in.nextLine().split("\\s+");  //这边有个坑，数字间的空格不止一个
+        Scanner in = new Scanner(System.in);
+        String[] arr = in.nextLine().split("\\s+");  //锟斤拷锟斤拷懈锟斤拷樱锟斤拷锟斤拷旨锟侥空革拷止一锟斤拷
         int[] arrs = new int[arr.length];
-        for(int i = 0; i < arrs.length; i ++){
+        for (int i = 0; i < arrs.length; i++) {
             arrs[i] = Integer.parseInt(arr[i]);
         }
 
         ArrayList<Integer> list = new ArrayList<>();
-        for(int i = 0; i < arrs.length / 2; i++){
-            if(arrs[i*2] != 0 && arrs[i*2 + 1] != 0){
-                list.add(arrs[i*2]*arrs[i*2 + 1]);
-                list.add(arrs[i*2 + 1] - 1);
+        for (int i = 0; i < arrs.length / 2; i++) {
+            if (arrs[i * 2] != 0 && arrs[i * 2 + 1] != 0) {
+                list.add(arrs[i * 2] * arrs[i * 2 + 1]);
+                list.add(arrs[i * 2 + 1] - 1);
             }
         }
 
-        if(list.isEmpty()){
+        if (list.isEmpty()) {
             System.out.println("0 0");
-        }else {
-            System.out.println( list.toString().replaceAll("\\[|]|,",""));
+        } else {
+            System.out.println(list.toString().replaceAll("\\[|]|,", ""));
         }
     }
 }

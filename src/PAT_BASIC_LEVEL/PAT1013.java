@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * Êä³öËØÊý   Áî Pi ±íÊ¾µÚ i ¸öËØÊý¡£ÏÖÈÎ¸øÁ½¸öÕýÕûÊý M¡ÜN¡Ü10^4 £¬ÇëÊä³ö P_M µ½ P_N
- * 6¤76¤7  µÄËùÓÐËØÊý¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½   ï¿½ï¿½ Pi ï¿½ï¿½Ê¾ï¿½ï¿½ i ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Mï¿½ï¿½Nï¿½ï¿½10^4 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ P_M ï¿½ï¿½ P_N
+ * ï¿½6ï¿½7ï¿½6ï¿½7  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 
 public class PAT1013 {
@@ -18,22 +18,22 @@ public class PAT1013 {
         ArrayList<Integer> list = new ArrayList<>();
         in.close();
 
-        while(count < end){
-            if(isPrime(num)){
-                 count ++;
-                if(count >= start ){
+        while (count < end) {
+            if (isPrime(num)) {
+                count++;
+                if (count >= start) {
                     list.add(num);
                 }
             }
-            num ++;
+            num++;
         }
 
         int index = 1;
-        for (int i = 0; i < list.size() - 1; i ++) {
-            if(index % 10 == 0){
+        for (int i = 0; i < list.size() - 1; i++) {
+            if (index % 10 == 0) {
                 System.out.print(list.get(i));
                 System.out.println();
-            }else {
+            } else {
                 System.out.print(list.get(i) + " ");
             }
             index++;
@@ -42,10 +42,10 @@ public class PAT1013 {
 
     }
 
-    private static boolean isPrime(int num){
-        if(num == 2) return true;
-        for(int i = 2; i < Math.sqrt(num) + 1; i++ ){
-            if(num % i == 0)
+    private static boolean isPrime(int num) {
+        if (num == 2) return true;
+        for (int i = 2; i < Math.sqrt(num) + 1; i++) {
+            if (num % i == 0)
                 return false;
         }
         return true;

@@ -6,15 +6,15 @@ import java.util.Scanner;
 import java.util.List;
 
 /**
- *µÂ²ÅÂÛ
- *
- *
- * ÊäÈëµÚ1ÐÐ¸ø³ö3¸öÕýÕûÊý£¬·Ö±ðÎª£ºN£¨<=105£©£¬¼´¿¼Éú×ÜÊý£»L£¨>=60£©£¬ÎªÂ¼È¡×îµÍ·ÖÊýÏß£¬¼´µÂ·ÖºÍ²Å·Ö¾ù²»µÍÓÚLµÄ¿¼Éú²ÅÓÐ×Ê¸ñ
- * ±»¿¼ÂÇÂ¼È¡£»H£¨<100£©£¬ÎªÓÅÏÈÂ¼È¡Ïß¡ª¡ªµÂ·ÖºÍ²Å·Ö¾ù²»µÍÓÚ´ËÏßµÄ±»¶¨ÒåÎª¡°²ÅµÂÈ«¾¡¡±£¬´ËÀà¿¼Éú°´µÂ²Å×Ü·Ö´Ó¸ßµ½µÍÅÅÐò£»²Å·Ö²»µ½
- * µ«µÂ·Öµ½ÏßµÄÒ»Àà¿¼ÉúÊôÓÚ¡°µÂÊ¤²Å¡±£¬Ò²°´×Ü·ÖÅÅÐò£¬µ«ÅÅÔÚµÚÒ»Àà¿¼ÉúÖ®ºó£»µÂ²Å·Ö¾ùµÍÓÚH£¬µ«ÊÇµÂ·Ö²»µÍÓÚ²Å·ÖµÄ¿¼ÉúÊôÓÚ¡°²ÅµÂ¼æ
- * Íö¡±µ«ÉÐÓÐ¡°µÂÊ¤²Å¡±Õß£¬°´×Ü·ÖÅÅÐò£¬µ«ÅÅÔÚµÚ¶þÀà¿¼ÉúÖ®ºó£»ÆäËû´ïµ½×îµÍÏßLµÄ¿¼ÉúÒ²°´×Ü·ÖÅÅÐò£¬µ«ÅÅÔÚµÚÈýÀà¿¼ÉúÖ®ºó¡£
- *
- * ËæºóNÐÐ£¬Ã¿ÐÐ¸ø³öÒ»Î»¿¼ÉúµÄÐÅÏ¢£¬°üÀ¨£º×¼¿¼Ö¤ºÅ¡¢µÂ·Ö¡¢²Å·Ö£¬ÆäÖÐ×¼¿¼Ö¤ºÅÎª8Î»ÕûÊý£¬µÂ²Å·ÖÎªÇø¼ä[0, 100]ÄÚµÄÕûÊý¡£Êý×Ö¼äÒÔ¿Õ¸ñ·Ö¸ô¡£
+ * ï¿½Â²ï¿½ï¿½ï¿½
+ * <p>
+ * <p>
+ * ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½Ð¸ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Îªï¿½ï¿½Nï¿½ï¿½<=105ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½ï¿½>=60ï¿½ï¿½ï¿½ï¿½ÎªÂ¼È¡ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½Â·ÖºÍ²Å·Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼È¡ï¿½ï¿½Hï¿½ï¿½<100ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Â¼È¡ï¿½ß¡ï¿½ï¿½ï¿½ï¿½Â·ÖºÍ²Å·Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ßµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Åµï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¿¼ï¿½ï¿½ï¿½ï¿½ï¿½Â²ï¿½ï¿½Ü·Ö´Ó¸ßµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò£»²Å·Ö²ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½Â·Öµï¿½ï¿½ßµï¿½Ò»ï¿½à¿¼ï¿½ï¿½ï¿½ï¿½ï¿½Ú¡ï¿½ï¿½ï¿½Ê¤ï¿½Å¡ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Ü·ï¿½ï¿½ï¿½ï¿½ò£¬µï¿½ï¿½ï¿½ï¿½Úµï¿½Ò»ï¿½à¿¼ï¿½ï¿½Ö®ï¿½ó£»µÂ²Å·Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½Hï¿½ï¿½ï¿½ï¿½ï¿½ÇµÂ·Ö²ï¿½ï¿½ï¿½ï¿½Ú²Å·ÖµÄ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¡ï¿½ï¿½ÅµÂ¼ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½Ê¤ï¿½Å¡ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½Ü·ï¿½ï¿½ï¿½ï¿½ò£¬µï¿½ï¿½ï¿½ï¿½ÚµÚ¶ï¿½ï¿½à¿¼ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ïµ½ï¿½ï¿½ï¿½ï¿½ï¿½Lï¿½Ä¿ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Ü·ï¿½ï¿½ï¿½ï¿½ò£¬µï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½à¿¼ï¿½ï¿½Ö®ï¿½ï¿½
+ * <p>
+ * ï¿½ï¿½ï¿½Nï¿½Ð£ï¿½Ã¿ï¿½Ð¸ï¿½ï¿½ï¿½Ò»Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½Ö¤ï¿½Å¡ï¿½ï¿½Â·Ö¡ï¿½ï¿½Å·Ö£ï¿½ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½Ö¤ï¿½ï¿½Îª8Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â²Å·ï¿½Îªï¿½ï¿½ï¿½ï¿½[0, 100]ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½Ô¿Õ¸ï¿½Ö¸ï¿½ï¿½ï¿½
  */
 
 public class PAT1015 {
@@ -30,20 +30,20 @@ public class PAT1015 {
         List<Student> Level2 = new ArrayList<>();
         List<Student> Level3 = new ArrayList<>();
         List<Student> Level4 = new ArrayList<>();
-        for(int i = 0; i < N; i++){
+        for (int i = 0; i < N; i++) {
             int StudentNum = in.nextInt();
             int DeScore = in.nextInt();
             int CaiScore = in.nextInt();
 
-            if(DeScore >= L && CaiScore >= L){
+            if (DeScore >= L && CaiScore >= L) {
                 Student stu = new Student(StudentNum, DeScore, CaiScore);
-                if(DeScore >= H && CaiScore >= H){
+                if (DeScore >= H && CaiScore >= H) {
                     Level1.add(stu);
-                }else if(DeScore >= H){
+                } else if (DeScore >= H) {
                     Level2.add(stu);
-                }else if( DeScore >= CaiScore){
+                } else if (DeScore >= CaiScore) {
                     Level3.add(stu);
-                }else {
+                } else {
                     Level4.add(stu);
                 }
             }
@@ -56,45 +56,45 @@ public class PAT1015 {
 
         System.out.println(Level1.size() + Level2.size() + Level3.size() + Level4.size());
 
-        for(Student stu:Level1){
+        for (Student stu : Level1) {
             System.out.println(stu.toString());
         }
-        for(Student stu:Level2){
+        for (Student stu : Level2) {
             System.out.println(stu.toString());
         }
-        for(Student stu:Level3){
+        for (Student stu : Level3) {
             System.out.println(stu.toString());
         }
-        for(Student stu:Level4){
+        for (Student stu : Level4) {
             System.out.println(stu.toString());
         }
 
     }
 }
 
-class Student implements Comparable<Student>{
+class Student implements Comparable<Student> {
     int StudentNum;
     int DeScore;
     int CaiScore;
     int Total;
 
-    public Student(int StudentNum, int DeScore, int CaiScore){
+    public Student(int StudentNum, int DeScore, int CaiScore) {
         this.StudentNum = StudentNum;
         this.DeScore = DeScore;
         this.CaiScore = CaiScore;
         this.Total = this.DeScore + this.CaiScore;
     }
 
-    public String toString(){
-        return StudentNum+" "+DeScore+" "+CaiScore;
+    public String toString() {
+        return StudentNum + " " + DeScore + " " + CaiScore;
     }
 
     @Override
     public int compareTo(Student o) {
-        if(this.Total != o.Total){
+        if (this.Total != o.Total) {
             return o.Total - this.Total;
         }
-        if(this.DeScore != o.DeScore){
+        if (this.DeScore != o.DeScore) {
             return o.DeScore - this.DeScore;
         }
         return this.StudentNum - o.StudentNum;

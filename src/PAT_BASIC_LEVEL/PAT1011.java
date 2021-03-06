@@ -2,23 +2,23 @@ package PAT_BASIC_LEVEL;
 
 
 /**
- * ¸ø¶¨Çø¼ä [6Ó12^31,2^31] ÄÚµÄ 3 ¸öÕûÊý A¡¢B ºÍ C£¬ÇëÅÐ¶Ï A+B ÊÇ·ñ´óÓÚ C¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [ï¿½6ï¿½12^31,2^31] ï¿½Úµï¿½ 3 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Aï¿½ï¿½B ï¿½ï¿½ Cï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ A+B ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ Cï¿½ï¿½
  */
 
 import java.util.Scanner;
-public class PAT1011{
-    public static void main(String args[]){
+
+public class PAT1011 {
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         boolean[] result = new boolean[n];
-        for(int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             long a = sc.nextLong();
             long b = sc.nextLong();
             long c = sc.nextLong();
             result[i] = c - a < b;
         }
-        for(int i = 0; i < n; i++)
-            System.out.println("Case #" + (i+1) + ": "+result[i]);
+        for (int i = 0; i < n; i++)
+            System.out.println("Case #" + (i + 1) + ": " + result[i]);
     }
 }

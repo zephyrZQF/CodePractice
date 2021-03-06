@@ -5,9 +5,9 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 
 /**
- *±¾ÌâÒªÇó¼ÆËã A/B£¬ÆäÖÐ A ÊÇ²»³¬¹ý 1000 Î»µÄÕýÕûÊý£¬B ÊÇ 1 Î»ÕýÕûÊý¡£ÄãÐèÒªÊä³öÉÌÊý Q ºÍÓàÊý R£¬Ê¹µÃ A=B¡ÁQ+R ³ÉÁ¢¡£
- *
- * ×ÜÊÇÓÐ³¬Ê± £¬ ¸Ä³ÉC++Ö±½Ó¾ÍÍ¨¹ýÁË
+ * ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ A/Bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ A ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½ 1000 Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B ï¿½ï¿½ 1 Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Q ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Rï¿½ï¿½Ê¹ï¿½ï¿½ A=Bï¿½ï¿½Q+R ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * <p>
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½Ê± ï¿½ï¿½ ï¿½Ä³ï¿½C++Ö±ï¿½Ó¾ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
  */
 
 public class PAT1017 {
@@ -19,14 +19,14 @@ public class PAT1017 {
         int division = Integer.parseInt(input[1]);
         StringBuilder sb = new StringBuilder();
         int tmp = (bigone.charAt(0) - '0');
-        if(  tmp/division != 0 ){
-            sb.append(tmp/division);
+        if (tmp / division != 0) {
+            sb.append(tmp / division);
         }
         int ans2 = tmp % division;
-        for(int i = 1; i < bigone.length(); i ++){
+        for (int i = 1; i < bigone.length(); i++) {
             tmp = bigone.charAt(i) - '0';
-            tmp = ans2*10 + tmp;
-            sb.append(tmp/division);
+            tmp = ans2 * 10 + tmp;
+            sb.append(tmp / division);
             ans2 = tmp % division;
         }
 

@@ -3,7 +3,7 @@ package PAT_BASIC_LEVEL;
 import java.util.Scanner;
 
 /**
-  * 1009	说反话
+ * 1009	说锟斤拷锟斤拷
  */
 
 public class PAT1009 {
@@ -15,7 +15,7 @@ public class PAT1009 {
         String reve = new StringBuilder(str).reverse().toString();
         String[] arrReve = reve.split(" ");
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < arrReve.length - 1; i ++){
+        for (int i = 0; i < arrReve.length - 1; i++) {
             sb.append(new StringBuilder(arrReve[i]).reverse());
             sb.append(" ");
         }

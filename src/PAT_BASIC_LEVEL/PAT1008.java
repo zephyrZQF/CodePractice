@@ -10,11 +10,11 @@ public class PAT1008 {
         int prefix = in.nextInt();
         prefix %= num;
         int[] arr = new int[num];
-        for(int i = 0, k = 0; i < num ; i ++){
-            if( i + prefix < num){
-                arr[ i + prefix ] = in.nextInt();
-            }else {
-                arr[ k++ ] = in.nextInt();
+        for (int i = 0, k = 0; i < num; i++) {
+            if (i + prefix < num) {
+                arr[i + prefix] = in.nextInt();
+            } else {
+                arr[k++] = in.nextInt();
             }
         }
 

@@ -10,22 +10,22 @@ public class PAT1016 {
         String num2 = in.next();
         String c2 = in.next();
         in.close();
-        String ans1 = "",ans2 = "";
+        String ans1 = "", ans2 = "";
 
-        int count1 = 0,count2 = 0;
-        for(int i = 0; i < num1.length(); i++){
-            if(num1.charAt(i) == c1.charAt(0))
+        int count1 = 0, count2 = 0;
+        for (int i = 0; i < num1.length(); i++) {
+            if (num1.charAt(i) == c1.charAt(0))
                 ans1 += c1;
         }
 
-        for(int i = 0; i < num2.length(); i ++){
-            if(num2.charAt(i) == c2.charAt(0) )
+        for (int i = 0; i < num2.length(); i++) {
+            if (num2.charAt(i) == c2.charAt(0))
                 ans2 += c2;
         }
 
-        if(ans1.equals("") && ans2.equals("")){
+        if (ans1.equals("") && ans2.equals("")) {
             System.out.println(0);
-        }else {
+        } else {
             System.out.println(Integer.parseInt(ans1) + Integer.parseInt(ans2));
         }
     }
