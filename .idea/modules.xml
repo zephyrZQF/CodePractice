@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CodePractice.iml" filepath="$PROJECT_DIR$/CodePractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LearnJava8/LearnJava8.iml" filepath="$PROJECT_DIR$/LearnJava8/LearnJava8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PAT_BASIC_LEVEL/PAT_BASIC_LEVEL.iml" filepath="$PROJECT_DIR$/PAT_BASIC_LEVEL/PAT_BASIC_LEVEL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/code-practice.iml" filepath="$PROJECT_DIR$/code-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/newcoder/newcoder.iml" filepath="$PROJECT_DIR$/newcoder/newcoder.iml" />
     </modules>
   </component>
 </project>
