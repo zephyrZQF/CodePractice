@@ -2,20 +2,15 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="newcoder" />
-        <module name="PAT_BASIC_LEVEL" />
+        <module name="LearnJava8" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="code-practice" target="1.8" />
       <module name="LearnJava8" target="1.8" />
-      <module name="newcoder" target="1.5" />
-      <module name="PAT_BASIC_LEVEL" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
